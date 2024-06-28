@@ -1,0 +1,104 @@
+body {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;    
+    text-size-adjust:initial;
+}
+
+
+.content{
+    width: 100%;     
+    display: flex;
+    flex-direction:column;    
+    font-family: Verdana,sans-serif;  
+    background-color:white;
+}
+
+#mainMenu {
+    width: 100%;      
+    display: flex;     
+    flex-direction:row;      
+    align-items:right;
+    background-color:#3f72af;
+    color:white;
+
+    
+}
+.menuSep{
+
+    width:80vw;
+}
+
+.menuPerfil{
+    width:15%;
+    display: flex;      
+    flex-direction:row; 
+    display: flex;
+    align-items: center;
+
+}
+
+
+.middlePanel{
+    width: 100%;  
+    display: flex;
+    flex-direction:row; 
+    background-color:white; 
+    flex-wrap:nowrap;   
+    height:80vh;   
+}
+
+#leftMenu{
+    align-items: center;
+    background-color:#EFEFEF;
+    height:auto;
+    width: 12%;
+}
+
+#leftMenu li{
+    padding-top: 10px;
+}
+#mainPanel{
+
+    color:gray;
+    width: 100%;
+}
+
+.imgIco{
+    width:3em;
+    height:auto;
+}
+
+a{
+    text-decoration:none;
+}
+
+.register_content{
+    width: 100%;     
+    display: flex;    
+    flex-direction:column;  
+    align-items: center; 
+    padding:0 0 0 0;
+}
+
+#register_idDivForm{
+    width: 40%;     
+    display: flex;
+    flex-direction:column;  
+    align-items: center;      
+  }
+
+  
+#register_mainMenu{
+  display: flex;    
+  flex-direction:column;      
+  align-items: center; 
+  background-color:#3f72af;
+  color:white;
+  width: 100%;
+
+}  
+.usuarioLoged{
+    color:white;
+}
