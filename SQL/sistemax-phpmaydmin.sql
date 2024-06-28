@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 28-06-2024 a las 01:15:39
+-- Tiempo de generación: 28-06-2024 a las 04:32:31
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -20,8 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `sistemax`
 --
-CREATE DATABASE IF NOT EXISTS `sistemax` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `sistemax`;
 
 -- --------------------------------------------------------
 
@@ -47,17 +45,25 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `usuario`, `nombre`, `apellido`, `email`, `dni`, `condicion`, `password`, `fechaIng`, `activo`) VALUES
-(1, 'Joaquin', 'test777', 'test', 'test5@gmail.com', '111111', 'admin', '7c4a8d09ca3762af61e59520943dc26494f8941b', '2024-06-27 11:24:58', 1),
-(4, 'pepe', 'Pedro', 'Sanchez', 'test@gmail.com', '23023443', 'usuario', '7c4a8d09ca3762af61e59520943dc26494f8941b', '2020-12-22 22:39:35', 1),
+(1, 'admin', 'admin', 'test', 'test5@gmail.com', '111111', 'admin', '7c4a8d09ca3762af61e59520943dc26494f8941b', '2024-06-27 11:24:58', 1),
+(4, 'pepe', 'Pedro', 'Sanchez', 'test@gmail.com', '230234434', 'user', '7c4a8d09ca3762af61e59520943dc26494f8941b', '2020-12-22 22:39:35', 1),
 (9, 'elMauri02', 'elMauri02', 'Pablo', 'test@gmail.com', '13223212', 'user', '7c4a8d09ca3762af61e59520943dc26494f8941b', '2021-05-26 00:28:03', 1),
-(12, 'pepe', 'pepe', '123232', 'test@gmail.com', '23008923', 'Administrador', '7c4a8d09ca3762af61e59520943dc26494f8941b', '2021-05-26 18:25:13', 1),
-(30, 'admin', 'admin', 'west', 'test@gmail.com', '2622223', 'admin', '7c4a8d09ca3762af61e59520943dc26494f8941b', '2024-06-27 12:44:05', 1),
+(12, 'pepe6', 'pepe6', 'zanchez6', 'test2@gmail.com', '11111111111', 'user', '7c4a8d09ca3762af61e59520943dc26494f8941b', '2021-05-26 18:25:13', 1),
+(30, 'admin', 'admin4', 'west4', 'test@gmail.com', '26222232', 'admin', '7c4a8d09ca3762af61e59520943dc26494f8941b', '2024-06-27 12:44:05', 1),
 (31, 'test6', 'test6n', 'test6a', 'mauriciowest@gmail.com', '27852334', 'user', '7c4a8d09ca3762af61e59520943dc26494f8941b', '2024-06-27 19:43:55', 1),
 (32, 'test7', 'test7n', 'test7a', 'test@test.com', '123678', 'user', '7c4a8d09ca3762af61e59520943dc26494f8941b', '2024-06-27 19:44:29', 1),
 (34, 'test1', 'test1n', 'test1a', 'test1@gmail.com', '123564', 'user', '7c4a8d09ca3762af61e59520943dc26494f8941b', '2024-06-27 19:48:04', 1),
 (36, 'test2', 'test2n', 'test2a', 'test1@gmail.com', '123564', 'user', '7c4a8d09ca3762af61e59520943dc26494f8941b', '2024-06-27 19:50:45', 1),
-(37, 'test3', 'test3n', 'test3a', 'test1@gmail.com', '123564', 'user', '7c4a8d09ca3762af61e59520943dc26494f8941b', '2024-06-27 19:51:04', 1),
-(39, 'test4', 'test4n', 'test4a', 'test1@gmail.com', '123564', 'user', '7c4a8d09ca3762af61e59520943dc26494f8941b', '2024-06-27 19:51:48', 1);
+(37, 'test3333', 'test33333', 'test33333', 'test1@gmail.com', '123564', 'user', '7c4a8d09ca3762af61e59520943dc26494f8941b', '2024-06-27 19:51:04', 1),
+(39, 'test4', 'test4n', 'test4a', 'test1@gmail.com', '123564', 'user', '7c4a8d09ca3762af61e59520943dc26494f8941b', '2024-06-27 19:51:48', 1),
+(40, 'testprueba', 'testprueban', 'testpruebaa', 'testprueba@gmail.com', '555555557', 'user', '7c4a8d09ca3762af61e59520943dc26494f8941b', '2024-06-27 22:14:58', 1),
+(41, 'testprueba', 'testprueban', 'testpruebaa', 'testprueba@gmail.com', '555555557', 'user', '7c4a8d09ca3762af61e59520943dc26494f8941b', '2024-06-27 22:16:16', 1),
+(42, 'testprueba', 'testprueban', 'testpruebaa', 'testprueba@gmail.com', '555555557', 'user', '7c4a8d09ca3762af61e59520943dc26494f8941b', '2024-06-27 22:16:27', 1),
+(43, 'testprueba', 'testprueban', 'testpruebaa', 'testprueba@gmail.com', '555555557', 'user', '7c4a8d09ca3762af61e59520943dc26494f8941b', '2024-06-27 22:16:33', 1),
+(44, 'ttt2', 'ttt2', 'ttt2', 'ttt@gmail.com', '23', 'user', 'f989cad3687aef9cf1088d926968d7f823364d97', '2024-06-27 22:18:28', 1),
+(45, 'ttt2', 'ttt2', 'ttt2', 'ttt@gmail.com', '23', 'user', 'f989cad3687aef9cf1088d926968d7f823364d97', '2024-06-27 22:18:32', 1),
+(46, 'tttt8', 'tttt8', 'tttt8', 'asd@aasd.com', '12312365', 'user', '7c4a8d09ca3762af61e59520943dc26494f8941b', '2024-06-27 22:54:05', 1),
+(47, '11111', '111111', 'asdasd', 'asd@asd.com', '123123213', 'user', '7c4a8d09ca3762af61e59520943dc26494f8941b', '2024-06-27 22:54:43', 1);
 
 --
 -- Índices para tablas volcadas
@@ -77,7 +83,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
