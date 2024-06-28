@@ -37,7 +37,7 @@ class Mysql_users{
     }
 
     public function updateById($id,$usuario,$nombre,$apellido,$dni,$email,$condicion,$password){
-        $usuario=$this->db->escStr($id);
+        $id=$this->db->escStr($id);
         $usuario=$this->db->escStr($usuario);
         $nombre=$this->db->escStr($nombre);
         $apellido=$this->db->escStr($apellido);
@@ -68,7 +68,8 @@ class Mysql_users{
 
         $query="SELECT * FROM users WHERE id={$id}";                
         $this->db->execQuery($query);
-        return $this->db->getOneRow();
+        $result=$this->db->getOneRow();        
+        return $result;
     }
     public function enableOrdissableById($id,$active){    
         

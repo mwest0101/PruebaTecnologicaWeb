@@ -10,6 +10,7 @@ define("SERVIDOR","localhost");
 define("USUARIO","mauri");
 define("PASSWORD","mauripw");
 define("BD","sistemax");
-define("NOMBRE_SITIO","SistemaX")
+define("NOMBRE_SITIO","SistemaX");
+define("HOME_FILE","index.php");
 
 ?>

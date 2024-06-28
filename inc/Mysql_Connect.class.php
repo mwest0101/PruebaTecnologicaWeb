@@ -17,7 +17,7 @@ class Mysql_connect{
     }
 
     public function execQuery($query){
-        if(DB_DEBUG==1) echo "Query->".$query."<br>\n";
+        if(DB_DEBUG==1) echo "<br>\n"."Query->".$query;
         if ($this->connect){
             $this->result=mysqli_query($this->db,$query);
             if (!$this->result){

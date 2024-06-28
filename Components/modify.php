@@ -27,13 +27,16 @@ if ($_SESSION["id"]!=""){
     }else{
         $id=$_SESSION["id"];
     }
+
     $userSql=$db->users->getById($id);
+   
     $usuario=$userSql["usuario"];
     $nombre=$userSql["nombre"];
     $apellido=$userSql["apellido"];
     $dni=$userSql["dni"];
     $email=$userSql["email"];
     $condicion=$userSql["condicion"];
+  
 };
 
 
@@ -96,8 +99,10 @@ if ($allOk){
     $result=$db->users->getAll();
     $smarty->assign("result",$result);
     $smarty->assign('headerMessage',cartelHide("Se modificaron los datos de usuario"));
+    
     $showMain=true;
     $allOk=false;
+    header('Location: '.HOME_FILE);
 }else{
 
     $smarty->assign("messageError",$messages);

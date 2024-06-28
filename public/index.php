@@ -11,7 +11,7 @@ $smarty->setTemplateDir(realpath(dirname(__FILE__)).'/../templates');
 
 $titulo="Smarty y consulta a base de datos";
 
-$showMain=false;
+$showMain=true;
 $headerMessage="";
 
 if(isset($_SESSION["usuario"]) and $_SESSION["usuario"]!=""){
@@ -35,19 +35,25 @@ $smarty->display('header.tpl');
 if(isset($_GET["action"])){
     
     
-    if($_GET["action"]=="register"){            
+    if($_GET["action"]=="register"){       
+        $showMain=false;     
         include(PATH_COMP."register.php");
     }elseif($_GET["action"]=="login"){            
+            $showMain=false;     
             include(PATH_COMP."login.php");
     }elseif($usuarioLoged!="" && $_GET["action"]=="salir"){   
         session_destroy();         
         $smarty->assign("usuarioLoged","");
-        $showMain=true;           
+        
+        
     }elseif($usuarioLoged!="" && $_GET["action"]=="modify"){            
+        $showMain=false;     
         include(PATH_COMP."modify.php");
     }elseif($usuarioLoged!="" && $_GET["action"]=="borrar"){            
+        $showMain=false;     
         include(PATH_COMP."borrar.php");
     }
+
 }
 
 $result=$db->users->getAll();

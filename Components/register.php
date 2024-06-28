@@ -86,6 +86,7 @@ if ($allOk){
     $smarty->assign('headerMessage',cartelHide("Registro de nuevo usuario completo"));
     $showMain=true;
     $allOk=false;
+    header('Location: '.HOME_FILE);
 }else{
 
     $smarty->assign("messageError",$messages);

@@ -32,6 +32,8 @@ if ($allOk){
 
         $smarty->assign('headerMessage',cartelHide("Bienvenido ".$resultSQL['nombre']." ".$resultSQL['apellido']));
         $showMain=true;
+        header('Location: '.HOME_FILE);
+
     }else{        
         // echo "incorrecto logeado";
         $smarty->assign('messageError',cartelHide("El usuario o contraseña no coinciden"));                
